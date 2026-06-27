@@ -1,3 +1,3 @@
 scoreboard objectives add mpp_decap_adv dummy ["",{"text":"Decapitation by Charged Creeper","color":"blue"}]
 
-tellraw @a[gamemode=!survival,gamemode=!adventure] ["",{"text":"Loaded ","color":"gray"},{"text":"mcpeachpies Player Head Drops","italic":true,"color":"blue","clickEvent":{"action":"open_url","value":"https://mcpeachpies.com/datapacks/?player_head_drops"},"hoverEvent":{"action":"show_text","contents":["",{"text":"mcpeachpies.com/datapacks/?player_head_drops","color":"gray"}]}}]
+tellraw @a[gamemode=!survival,gamemode=!adventure] ["",{text:"Loaded ",color:"gray"},{text:"mcpeachpies Player Head Drops",italic:true,color:"blue",click_event:{action:"open_url",url:"https://mcpeachpies.com/datapacks/?player-head-drops"},hover_event:{action:"show_text",value:[{text:"mcpeachpies.com/datapacks/?player-head-drops",color:"gray"}]}}]
