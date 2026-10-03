@@ -20,51 +20,45 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 5.0,
-                "min": 3.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
           "name": "minecraft:wheat",
-          "weight": 7
+          "weight": 7,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "add": false,
+            "count": {
+              "type": "minecraft:uniform",
+              "max": 5.0,
+              "min": 3.0
+            }
+          }
         },
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 5.0,
-                "min": 2.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
           "name": "minecraft:potato",
-          "weight": 5
+          "weight": 5,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "add": false,
+            "count": {
+              "type": "minecraft:uniform",
+              "max": 5.0,
+              "min": 2.0
+            }
+          }
         },
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 5.0,
-                "min": 3.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
           "name": "minecraft:carrot",
-          "weight": 5
+          "weight": 5,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "add": false,
+            "count": {
+              "type": "minecraft:uniform",
+              "max": 5.0,
+              "min": 3.0
+            }
+          }
         }
       ],
       "rolls": {
@@ -78,18 +72,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 2.0
-              },
-              "function": "minecraft:set_count"
+          "name": "minecraft:dark_oak_log",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "add": false,
+            "count": {
+              "type": "minecraft:uniform",
+              "max": 3.0,
+              "min": 2.0
             }
-          ],
-          "name": "minecraft:dark_oak_log"
+          }
         }
       ],
       "rolls": {
@@ -108,77 +100,67 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 6.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
           "name": "minecraft:string",
-          "weight": 4
+          "weight": 4,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "add": false,
+            "count": {
+              "type": "minecraft:uniform",
+              "max": 6.0,
+              "min": 1.0
+            }
+          }
         },
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 7.0,
-                "min": 2.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
           "name": "minecraft:arrow",
-          "weight": 4
+          "weight": 4,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "add": false,
+            "count": {
+              "type": "minecraft:uniform",
+              "max": 7.0,
+              "min": 2.0
+            }
+          }
         },
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
           "name": "minecraft:tripwire_hook",
-          "weight": 3
+          "weight": 3,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "add": false,
+            "count": {
+              "type": "minecraft:uniform",
+              "max": 3.0,
+              "min": 1.0
+            }
+          }
         },
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
           "name": "minecraft:iron_ingot",
-          "weight": 3
+          "weight": 3,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "add": false,
+            "count": {
+              "type": "minecraft:uniform",
+              "max": 3.0,
+              "min": 1.0
+            }
+          }
         },
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:enchant_randomly",
-              "options": "#minecraft:on_random_loot"
-            }
-          ],
-          "name": "minecraft:book"
+          "name": "minecraft:book",
+          "modifier": {
+            "type": "minecraft:enchant_randomly",
+            "options": "#minecraft:on_random_loot"
+          }
         }
       ],
       "rolls": {
@@ -195,16 +177,14 @@
           "name": "minecraft:goat_horn"
         }
       ],
-      "functions": [
-        {
-          "function": "minecraft:set_instrument",
-          "options": "#minecraft:regular_goat_horns"
-        }
-      ],
       "rolls": {
         "type": "minecraft:uniform",
         "max": 1.0,
         "min": 0.0
+      },
+      "modifier": {
+        "type": "minecraft:set_instrument",
+        "options": "#minecraft:regular_goat_horns"
       }
     },
     {
@@ -216,154 +196,132 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": 2.0,
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:sentry_armor_trim_smithing_template"
+          "name": "minecraft:sentry_armor_trim_smithing_template",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "add": false,
+            "count": 2.0
+          }
         }
       ],
       "rolls": 1.0
     },
     {
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.25
-        }
-      ],
       "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:player_head",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:profile": {
-                  "texture": "minecraft:entity/player/wide/steve"
-                }
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:profile": {
+                "texture": "minecraft:entity/player/wide/steve"
               }
             }
-          ]
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:player_head",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:profile": {
-                  "texture": "minecraft:entity/player/slim/alex"
-                }
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:profile": {
+                "texture": "minecraft:entity/player/slim/alex"
               }
             }
-          ]
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:player_head",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:profile": {
-                  "texture": "minecraft:entity/player/wide/ari"
-                }
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:profile": {
+                "texture": "minecraft:entity/player/wide/ari"
               }
             }
-          ]
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:player_head",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:profile": {
-                  "texture": "minecraft:entity/player/slim/efe"
-                }
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:profile": {
+                "texture": "minecraft:entity/player/slim/efe"
               }
             }
-          ]
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:player_head",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:profile": {
-                  "texture": "minecraft:entity/player/wide/kai"
-                }
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:profile": {
+                "texture": "minecraft:entity/player/wide/kai"
               }
             }
-          ]
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:player_head",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:profile": {
-                  "texture": "minecraft:entity/player/slim/makena"
-                }
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:profile": {
+                "texture": "minecraft:entity/player/slim/makena"
               }
             }
-          ]
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:player_head",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:profile": {
-                  "texture": "minecraft:entity/player/slim/noor"
-                }
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:profile": {
+                "texture": "minecraft:entity/player/slim/noor"
               }
             }
-          ]
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:player_head",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:profile": {
-                  "texture": "minecraft:entity/player/wide/sunny"
-                }
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:profile": {
+                "texture": "minecraft:entity/player/wide/sunny"
               }
             }
-          ]
+          }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:player_head",
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:profile": {
-                  "texture": "minecraft:entity/player/wide/zuri"
-                }
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:profile": {
+                "texture": "minecraft:entity/player/wide/zuri"
               }
             }
-          ]
+          }
         }
-      ]
+      ],
+      "condition": {
+        "type": "minecraft:random_chance",
+        "chance": 0.25
+      }
     }
   ],
   "random_sequence": "minecraft:chests/pillager_outpost"
